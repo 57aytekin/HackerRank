@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.example.hackerrank.solutions.BreakingTheRecords
+import com.example.hackerrank.solutions.DivisibleSumPairs
 import com.example.hackerrank.solutions.SubarrayDivision
 
 class MainActivity : AppCompatActivity() {
@@ -12,7 +13,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //breakingRecords()
-        testSubarrayDivision()
+        //testSubarrayDivision()
+        testDivisibleSumPairs()
     }
 
     fun breakingRecords() {
@@ -26,5 +28,10 @@ class MainActivity : AppCompatActivity() {
         val subarrayDivision = SubarrayDivision()
         val list = mutableListOf(4)
         Log.d("RESULT",subarrayDivision.birthday(list.toTypedArray(),4, 1).toString())
+    }
+    fun testDivisibleSumPairs() {
+        val test = DivisibleSumPairs()
+        val list = mutableListOf(1, 3,2, 6, 1, 2)
+        Log.d("RESULT", test.divisibleSumPairs(6, 3,list.toTypedArray()).toString())
     }
 }
