@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import com.example.hackerrank.solutions.BreakingTheRecords
 import com.example.hackerrank.solutions.DivisibleSumPairs
+import com.example.hackerrank.solutions.MigratoryBirds
 import com.example.hackerrank.solutions.SubarrayDivision
 
 class MainActivity : AppCompatActivity() {
@@ -14,7 +15,14 @@ class MainActivity : AppCompatActivity() {
 
         //breakingRecords()
         //testSubarrayDivision()
-        testDivisibleSumPairs()
+        //testDivisibleSumPairs()
+        testMigratoryBirds()
+    }
+
+    private fun testMigratoryBirds() {
+        val list = mutableListOf(3, 1, 1, 2, 4, 1 )
+        val migratoryBirds = MigratoryBirds()
+        Log.d("RESULT",migratoryBirds.migratoryBirds(list.toTypedArray()).toString())
     }
 
     fun breakingRecords() {
