@@ -3,10 +3,7 @@ package com.example.hackerrank
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.example.hackerrank.solutions.BreakingTheRecords
-import com.example.hackerrank.solutions.DivisibleSumPairs
-import com.example.hackerrank.solutions.MigratoryBirds
-import com.example.hackerrank.solutions.SubarrayDivision
+import com.example.hackerrank.solutions.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,9 +13,15 @@ class MainActivity : AppCompatActivity() {
         //breakingRecords()
         //testSubarrayDivision()
         //testDivisibleSumPairs()
-        testMigratoryBirds()
+        //testMigratoryBirds()
+        testDayOfProgrammer()
     }
 
+    private fun testDayOfProgrammer() {
+        val year = 1758
+        val dayOfTheProgrammer = DayOfTheProgrammer()
+        Log.d("RESULT", dayOfTheProgrammer.dayOfProgrammer(year))
+    }
     private fun testMigratoryBirds() {
         val list = mutableListOf(3, 1, 1, 2, 4, 1 )
         val migratoryBirds = MigratoryBirds()
