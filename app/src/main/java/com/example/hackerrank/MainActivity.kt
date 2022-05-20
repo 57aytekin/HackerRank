@@ -14,7 +14,14 @@ class MainActivity : AppCompatActivity() {
         //testSubarrayDivision()
         //testDivisibleSumPairs()
         //testMigratoryBirds()
-        testDayOfProgrammer()
+        //testDayOfProgrammer()
+        testBillDivision()
+    }
+
+    private fun testBillDivision() {
+        val list = mutableListOf(3, 10, 2, 9)
+        val billDivision = BillDivision()
+        billDivision.bonAppetit(list.toTypedArray(), 1, 12)
     }
 
     private fun testDayOfProgrammer() {
