@@ -15,7 +15,15 @@ class MainActivity : AppCompatActivity() {
         //testDivisibleSumPairs()
         //testMigratoryBirds()
         //testDayOfProgrammer()
-        testBillDivision()
+        //testBillDivision()
+        testAppleAndOrange()
+    }
+
+    private fun testAppleAndOrange() {
+        val appleAndOrange = AppleAndOrange()
+        val apples = listOf(2,3,-4)
+        val oranges = listOf(3,-2,-4)
+        appleAndOrange.countApplesAndOranges(7,10, 4,12, apples.toTypedArray(), oranges.toTypedArray())
     }
 
     private fun testBillDivision() {
