@@ -16,7 +16,14 @@ class MainActivity : AppCompatActivity() {
         //testMigratoryBirds()
         //testDayOfProgrammer()
         //testBillDivision()
-        testAppleAndOrange()
+        //testAppleAndOrange()
+        testSalesByMatch()
+    }
+
+    private fun testSalesByMatch() {
+        val salesByMatch = SalesByMatch()
+        val list = mutableListOf(1,2,1,2,1,3,2)
+        println(salesByMatch.sockMerchant(7, list.toTypedArray()))
     }
 
     private fun testAppleAndOrange() {
