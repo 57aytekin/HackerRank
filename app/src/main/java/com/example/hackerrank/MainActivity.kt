@@ -17,7 +17,13 @@ class MainActivity : AppCompatActivity() {
         //testDayOfProgrammer()
         //testBillDivision()
         //testAppleAndOrange()
-        testSalesByMatch()
+        //testSalesByMatch()
+        testDrawingBook()
+    }
+
+    private fun testDrawingBook() {
+        val drawingBook = DrawingBook()
+        println(drawingBook.pageCount(5,3))
     }
 
     private fun testSalesByMatch() {
