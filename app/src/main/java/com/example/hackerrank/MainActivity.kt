@@ -18,9 +18,15 @@ class MainActivity : AppCompatActivity() {
         //testBillDivision()
         //testAppleAndOrange()
         //testSalesByMatch()
-        testDrawingBook()
+        //testDrawingBook()
+        testCountingValleys()
     }
 
+    private fun testCountingValleys() {
+        val countingValleys = CountingValleys()
+        //println(countingValleys.countingValleys(8,"UDDDUDUU"))
+        println(countingValleys.countingValleys(8,"DDUUUUDD"))
+    }
     private fun testDrawingBook() {
         val drawingBook = DrawingBook()
         println(drawingBook.pageCount(5,3))
