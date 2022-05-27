@@ -19,7 +19,15 @@ class MainActivity : AppCompatActivity() {
         //testAppleAndOrange()
         //testSalesByMatch()
         //testDrawingBook()
-        testCountingValleys()
+        //testCountingValleys()
+        testElectronicShop()
+    }
+
+    private fun testElectronicShop() {
+        val electronicsShop = ElectronicsShop()
+        val keyboards = mutableListOf(40, 50, 60)
+        val drives = mutableListOf(5, 8, 12)
+        println(electronicsShop.getMoneySpent(keyboards.toTypedArray(), drives.toTypedArray(), 60))
     }
 
     private fun testCountingValleys() {
