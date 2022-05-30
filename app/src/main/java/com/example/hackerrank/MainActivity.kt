@@ -20,7 +20,13 @@ class MainActivity : AppCompatActivity() {
         //testSalesByMatch()
         //testDrawingBook()
         //testCountingValleys()
-        testElectronicShop()
+        //testElectronicShop()
+        testCatsAndMouse()
+    }
+
+    private fun testCatsAndMouse() {
+        val catsAndAMouse = CatsAndAMouse()
+        println(catsAndAMouse.catAndMouse(2,5,4))
     }
 
     private fun testElectronicShop() {
