@@ -22,7 +22,9 @@ class MainActivity : AppCompatActivity() {
         //testCountingValleys()
         //testElectronicShop()
         //testCatsAndMouse()
-        testPickingNumbers()
+        //testPickingNumbers()
+        println(hurdleRace(1, listOf(1,2,3,3,2)))
+
     }
 
     private fun testPickingNumbers() {
